@@ -1,0 +1,34 @@
+<div class="col-md-6">
+  <h2 class="text-center">Employee form</h2>
+<form>
+
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input [(ngModel)]="employee.firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+  </div>
+
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input [(ngModel)]="employee.lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender Male/Female:</label>
+    <input type="email" [(ngModel)]="employee.gender" placeholder="Gender" name="gender" class="form-control" id="gender">
+  </div>
+
+  <div class="form-group">
+    <label for="dob">Email address:</label>
+    <input type="email" [(ngModel)]="employee.dob" placeholder="Dob" name="dob" class="form-control" id="dob">
+  </div>
+
+
+  <div class="form-group">
+    <label for="department">Department:</label>
+    <input type="email" [(ngModel)]="employee.department" placeholder="department" name="department" class="form-control" id="department">
+  </div>
+
+
+  <button class="btn btn-success" (click)="createEmployee()">Create</button>
+</form>
+</div>
